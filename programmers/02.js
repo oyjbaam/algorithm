@@ -1,7 +1,7 @@
 // 크기가 작은 부분 문자열
-/*
-https://school.programmers.co.kr/learn/courses/30/lessons/147355
-*/
+/**
+ * @see https://school.programmers.co.kr/learn/courses/30/lessons/147355
+ */
 //내 풀이
 function solution(str, p) {
   let len = p.length
@@ -12,7 +12,7 @@ function solution(str, p) {
     a.length === len && strArr.push(str.slice(i, i + len))
   }
   console.log(strArr)
-  answer = strArr.filter((n) => +n <= +p).length
+  answer = strArr.filter(n => +n <= +p).length
 }
 // 다른 사람 풀이
 
